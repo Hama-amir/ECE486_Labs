@@ -51,12 +51,12 @@ import DobotDllType as dType
 
 # Your camera matrix from Lab 2's calibrate_camera.py output.
 # It looks like [[fx, 0, cx], [0, fy, cy], [0, 0, 1]].
-CAMERA_MATRIX = np.array([[1.44626287e+03, 0.00000000e+00, 3.03133321e+02], 
-                          [0.00000000e+00, 1.44561654e+03, 2.06766300e+02], 
-                          [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]], dtype=np.float64)
+CAMERA_MATRIX = np.array([[[1.06662588e+03, 0.00000000e+00, 2.98334535e+02],
+                           [0.00000000e+00, 1.06528571e+03, 2.06004928e+02],
+                           [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]]], dtype=np.float64)
 
 # Distortion coefficients from the same calibration output.
-DIST_COEFFS = np.array([[ 1.70917328e-01, -4.66463114e+00,  4.44015664e-03,  4.94934205e-03,  -3.38021810e+01]], dtype=np.float64)  # <-- REPLACE
+DIST_COEFFS = np.array([[-5.92414090e-02,  3.49345605e+00,  1.12066722e-03, -2.94255650e-03,-3.87684184e+01]], dtype=np.float64)  # <-- REPLACE
 
 # Physical size of the ArUco marker's black border, in METERS.
 # Measure it with a ruler -- do not guess.
