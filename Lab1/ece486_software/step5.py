@@ -70,36 +70,36 @@ CAMERA_INDEX = 0         # <-- ADJUST if the wrong camera opens
 
 
 # =============================================================================
-# Tailored Camera Calibration and Validation Targets (Guaranteed Visible)
+# Updated Camera Calibration and Validation Targets (In-View & In-Workspace)
 # =============================================================================
-# 12 Calibration points clustered inside the camera's true horizontal sweet spot
+# 12 Calibration points clustered inside your station's true camera sweet spot
 CALIB_TARGETS = [
-    ("calib_00", 180.0,   0.0, -30),  # Center baseline
-    ("calib_01", 200.0,  30.0, -30),  # Slight left
-    ("calib_02", 200.0, -30.0, -30),  # Slight right
-    ("calib_03", 220.0,  50.0, -30),  # Mid extension left
-    ("calib_04", 220.0, -50.0, -30),  # Mid extension right
-    ("calib_05", 240.0,   0.0, -30),  # Max extension center
-    ("calib_06", 180.0,   0.0, -75),  # Lower tier center
-    ("calib_07", 200.0,  40.0, -75),  # Lower tier left
-    ("calib_08", 200.0, -40.0, -75),  # Lower tier right
-    ("calib_09", 220.0,  60.0, -75),  # Lower tier extended left
-    ("calib_10", 220.0, -60.0, -75),  # Lower tier extended right
-    ("calib_11", 240.0,  20.0, -75),  # Lower tier max extension
+    ("calib_00", 175.0,   0.0, -25),  # Baseline center
+    ("calib_01", 195.0,  25.0, -25),  # Left mid-reach
+    ("calib_02", 195.0, -25.0, -25),  # Right mid-reach
+    ("calib_03", 215.0,  45.0, -25),  # Left extension
+    ("calib_04", 215.0, -45.0, -25),  # Right extension
+    ("calib_05", 235.0,   0.0, -25),  # Max extension center
+    ("calib_06", 175.0,   0.0, -70),  # Lower tier center
+    ("calib_07", 195.0,  30.0, -70),  # Lower tier left
+    ("calib_08", 195.0, -30.0, -70),  # Lower tier right
+    ("calib_09", 215.0,  50.0, -70),  # Lower tier extended left
+    ("calib_10", 215.0, -50.0, -70),  # Lower tier extended right
+    ("calib_11", 235.0,  15.0, -70),  # Lower tier max extension
 ]
 
-# 20 Validation points cleanly distributed and disjoint from calibration
+# 20 Validation points cleanly distributed and completely disjoint from calibration
 VALIDATION_TARGETS = [
-    ("val_00", 170.0,  20.0, -20), ("val_01", 170.0, -20.0, -20),
-    ("val_02", 190.0,   0.0, -40), ("val_03", 190.0,  50.0, -40),
-    ("val_04", 190.0, -50.0, -40), ("val_05", 210.0,  25.0, -20),
-    ("val_06", 210.0, -25.0, -20), ("val_07", 210.0,  70.0, -60),
-    ("val_08", 210.0, -70.0, -60), ("val_09", 230.0,   0.0, -20),
-    ("val_10", 230.0,  40.0, -50), ("val_11", 230.0, -40.0, -50),
-    ("val_12", 180.0,  15.0, -60), ("val_13", 180.0, -15.0, -60),
-    ("val_14", 200.0,  10.0, -85), ("val_15", 200.0, -10.0, -85),
-    ("val_16", 220.0,  35.0, -85), ("val_17", 220.0, -35.0, -85),
-    ("val_18", 245.0,  10.0, -45), ("val_19", 245.0, -10.0, -45),
+    ("val_00", 165.0,  15.0, -15), ("val_01", 165.0, -15.0, -15),
+    ("val_02", 185.0,   0.0, -35), ("val_03", 185.0,  40.0, -35),
+    ("val_04", 185.0, -40.0, -35), ("val_05", 205.0,  20.0, -15),
+    ("val_06", 205.0, -20.0, -15), ("val_07", 205.0,  55.0, -55),
+    ("val_08", 205.0, -55.0, -55), ("val_09", 225.0,   0.0, -15),
+    ("val_10", 225.0,  35.0, -45), ("val_11", 225.0, -35.0, -45),
+    ("val_12", 175.0,  10.0, -50), ("val_13", 175.0, -10.0, -50),
+    ("val_14", 195.0,  10.0, -60), ("val_15", 195.0, -10.0, -60),
+    ("val_16", 215.0,  25.0, -60), ("val_17", 215.0, -25.0, -60),
+    ("val_18", 230.0,  10.0, -40), ("val_19", 230.0, -10.0, -40),
 ]
 
 
